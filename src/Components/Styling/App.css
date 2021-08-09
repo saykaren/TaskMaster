@@ -1,14 +1,54 @@
+html {
+  height: 100%;
+  background-color: var(--primary-color);
+  color: var(--text-light-color);
+}
+
+body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  --primary-color: #282c34;
+  --secondary-color: #66FF00;
+  --third-color: grey;
+  --text-light-color: white;
+  --text-dark-color: black;
+
+}
+
 .App {
+  height: 100%;
   text-align: center;
+  flex: 1 1 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  min-height: 12%;
+}
+
+.AppContent {
+  background-color: var(--third-color);
+  min-height: 80%;
+}
+
+.AppFooter {
+  min-height: 8%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: right;
+  padding: 3%;
 }
