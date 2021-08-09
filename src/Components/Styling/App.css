@@ -1,5 +1,12 @@
 html {
   height: 100%;
+  --primary-color: #282c34;
+  --secondary-color: #66FF00;
+  --third-color: grey;
+  --text-light-color: white;
+  --text-dark-color: black;
+  --light-background: #EEEEEE;
+  --dark-grey: #9E9E9E;
   background-color: var(--primary-color);
   color: var(--text-light-color);
 }
@@ -10,11 +17,6 @@ body {
 
 #root {
   height: 100%;
-  --primary-color: #282c34;
-  --secondary-color: #66FF00;
-  --third-color: grey;
-  --text-light-color: white;
-  --text-dark-color: black;
 
 }
 
@@ -51,4 +53,50 @@ body {
   color: var(--secondary-color);
   text-align: right;
   padding: 3%;
+}
+
+.containerDrag {
+  text-align: center;
+}
+
+.wip {
+  position: absolute;
+  width: 150px;
+  height: 100vh;
+  left: 0;
+  top: 10;
+  background-color: var(--light-background);
+  border-right: 1px dotted;
+}
+
+.header {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-background);
+  width: 100%;
+}
+
+.taskHeader {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  width: 100%;
+}
+
+.droppable {
+  position: absolute;
+  width: 150px;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  background-color: var(--dark-grey);
+  border-left: 1px dotted;
+}
+
+.draggable {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  margin: 5px auto;
+  line-height: 5em;
 }
