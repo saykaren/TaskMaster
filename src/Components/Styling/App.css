@@ -60,13 +60,14 @@ body {
 }
 
 .wip {
-  position: absolute;
-  width: 150px;
-  height: 100vh;
+  /* position: absolute; */
+  /* width: 150px;
+  height: 80vh;
   left: 0;
-  top: 10;
+  top: 10; */
   background-color: var(--light-background);
   border-right: 1px dotted;
+  color: var(--text-dark-color)
 }
 
 .header {
@@ -84,11 +85,11 @@ body {
 }
 
 .droppable {
-  position: absolute;
-  width: 150px;
-  height: 100vh;
+  /* position: absolute; */
+  /* width: 150px;
+  height: 80vh;
   right: 0;
-  top: 0;
+  top: 30%; */
   background-color: var(--dark-grey);
   border-left: 1px dotted;
 }
