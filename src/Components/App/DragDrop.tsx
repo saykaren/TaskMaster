@@ -5,9 +5,11 @@ export interface DragDropProps {}
 
 const DragDrop = ({}: DragDropProps) => {
   const [tasks, setTasks] = useState([
-    { name: "Angular", category: "wip", bgcolor: "yellow" },
-    { name: "React", category: "wip", bgcolor: "pink" },
-    { name: "Vue", category: "complete", bgcolor: "skyblue" },
+    { name: "Clean car", category: "wip", bgcolor: "yellow" },
+    { name: "Laundry", category: "wip", bgcolor: "pink" },
+    { name: "Code", category: "wip", bgcolor: "skyblue" },
+    { name: "Cook", category: "wip", bgcolor: "skyblue" },
+    { name: "Workout", category: "wip", bgcolor: "skyblue" },
 
   ]);
 

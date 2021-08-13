@@ -7,6 +7,7 @@ html {
   --text-dark-color: black;
   --light-background: #EEEEEE;
   --dark-grey: #9E9E9E;
+  --border-radius: 20px;
   background-color: var(--primary-color);
   color: var(--text-light-color);
 }
@@ -95,9 +96,13 @@ body {
 .draggable {
   width: 100px;
   height: 100px;
-  background-color: yellow;
+  background-color: var(--primary-color);
+  color:var(--secondary-color);
   margin: 5px auto;
   line-height: 5em;
+  text-shadow: 1px 1px#EEEEEE;
+  margin: 2px 2px;
+  border-radius: var(--border-radius);
 }
 
 .taskContainer {
