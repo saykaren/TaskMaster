@@ -8,8 +8,9 @@ const DragDrop = ({}: DragDropProps) => {
     { name: "Angular", category: "wip", bgcolor: "yellow" },
     { name: "React", category: "wip", bgcolor: "pink" },
     { name: "Vue", category: "complete", bgcolor: "skyblue" },
+
   ]);
-  console.log({ tasks });
+
   const onDragOver = (ev: React.SyntheticEvent<EventTarget>) => {
     ev.preventDefault();
   };
@@ -23,13 +24,7 @@ const DragDrop = ({}: DragDropProps) => {
       | any,
     id: string
   ) => {
-    console.log("dragstart:", id);
-    //   console.log(ev.type);
-
     ev.dataTransfer.setData("id", id);
-
-    // //   ev.dataTransfer.
-    //   ev.dataTransfer.setData("id", id);
   };
 
   const onDrop = (ev: React.SyntheticEvent<EventTarget> | any, cat: string) => {
@@ -49,47 +44,57 @@ const DragDrop = ({}: DragDropProps) => {
   return (
     <div className="containerDrag">
       Drag and drop
-      <span className="task-header">WIP</span>
-      <section>
-        <div className="wip">
-          <h1>Left</h1>
-          {tasks &&
-            tasks
-              .filter((item) => item.category === "wip")
-              .map((item, indexItem) => (
-                <div key={indexItem}>
-                
+      <section className="taskContainer">
+        <div
+          className="taskWipComplete"
+          id="wip"
+          onDrop={(e) => onDrop(e, e.currentTarget.id)}
+          onDragOver={(e) => {
+            onDragOver(e);
+          }}
+        >
+          <h1>WIP</h1>
+          <div className="eachTaskContainer">
+            {tasks &&
+              tasks
+                .filter((item) => item.category === "wip")
+                .map((item, indexItem) => (
+                  <div key={indexItem}>
+                    <div
+                      className="draggable"
+                      draggable={true}
+                      onDragStart={(e) => onDrageStart(e, item.name)}
+                    >
+                      {item.name}
+                    </div>
+                  </div>
+                ))}
+          </div>
+        </div>
+        <div
+          className="taskWipComplete"
+          id="complete"
+          onDrop={(e) => onDrop(e, e.currentTarget.id)}
+          onDragOver={(e) => {
+            onDragOver(e);
+          }}
+        >
+          <h1>Complete</h1>
+          <div className="eachTaskContainer">
+            {tasks &&
+              tasks
+                .filter((item) => item.category === "complete")
+                .map((item, indexItem) => (
                   <div
+                    key={indexItem}
                     className="draggable"
                     draggable={true}
                     onDragStart={(e) => onDrageStart(e, item.name)}
-                    // onDragStart={(e)=>console.log(e)}
                   >
                     {item.name}
                   </div>
-                </div>
-              ))}
-        </div>
-        <div className="wip">
-          <h1>Right</h1>
-          <span className="task-header">Complete</span>
-          {tasks &&
-            tasks
-              .filter((item) => item.category === "complete")
-              .map((item, indexItem) => (
-                <div key={indexItem}>
-                 
-                  <div
-                    className="droppable"
-                    onDragOver={(e) => {
-                      onDragOver(e);
-                    }}
-                    onDrop={(e) => onDrop(e, "complete")}
-                  >
-                    {item.name}
-                  </div>
-                </div>
-              ))}
+                ))}
+          </div>
         </div>
       </section>
     </div>
