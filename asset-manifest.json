@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/TaskMaster/static/css/main.445e7c2c.chunk.css",
-    "main.js": "/TaskMaster/static/js/main.05689976.chunk.js",
-    "main.js.map": "/TaskMaster/static/js/main.05689976.chunk.js.map",
+    "main.css": "/TaskMaster/static/css/main.a22fb5bd.chunk.css",
+    "main.js": "/TaskMaster/static/js/main.fb897be4.chunk.js",
+    "main.js.map": "/TaskMaster/static/js/main.fb897be4.chunk.js.map",
     "runtime-main.js": "/TaskMaster/static/js/runtime-main.c67ded8f.js",
     "runtime-main.js.map": "/TaskMaster/static/js/runtime-main.c67ded8f.js.map",
     "static/js/2.d8d5419b.chunk.js": "/TaskMaster/static/js/2.d8d5419b.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.c5ad51b1.chunk.js": "/TaskMaster/static/js/3.c5ad51b1.chunk.js",
     "static/js/3.c5ad51b1.chunk.js.map": "/TaskMaster/static/js/3.c5ad51b1.chunk.js.map",
     "index.html": "/TaskMaster/index.html",
-    "static/css/main.445e7c2c.chunk.css.map": "/TaskMaster/static/css/main.445e7c2c.chunk.css.map",
+    "static/css/main.a22fb5bd.chunk.css.map": "/TaskMaster/static/css/main.a22fb5bd.chunk.css.map",
     "static/js/2.d8d5419b.chunk.js.LICENSE.txt": "/TaskMaster/static/js/2.d8d5419b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c67ded8f.js",
     "static/js/2.d8d5419b.chunk.js",
-    "static/css/main.445e7c2c.chunk.css",
-    "static/js/main.05689976.chunk.js"
+    "static/css/main.a22fb5bd.chunk.css",
+    "static/js/main.fb897be4.chunk.js"
   ]
 }
