@@ -59,15 +59,12 @@ body {
   text-align: center;
 }
 
-.wip {
-  /* position: absolute; */
-  /* width: 150px;
-  height: 80vh;
-  left: 0;
-  top: 10; */
+.taskWipComplete {
   background-color: var(--light-background);
   border-right: 1px dotted;
-  color: var(--text-dark-color)
+  color: var(--text-dark-color);
+  padding: 0 10px;
+  min-width: 45%;
 }
 
 .header {
@@ -92,6 +89,7 @@ body {
   top: 30%; */
   background-color: var(--dark-grey);
   border-left: 1px dotted;
+
 }
 
 .draggable {
@@ -100,4 +98,15 @@ body {
   background-color: yellow;
   margin: 5px auto;
   line-height: 5em;
+}
+
+.taskContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.eachTaskContainer {
+  display: flex;
+  flex-wrap: wrap;
+  
 }
